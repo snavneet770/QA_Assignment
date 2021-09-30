@@ -41,7 +41,7 @@ public class TestCase_01 extends TestBase {
 		searchResultPage.select_price_range();
 		searchResultPage.select_returnflight();
 		searchResultPage.handle_popup();
-		//searchResultPage.validate_trip();
+		searchResultPage.validate_trip();
 
 	}
 
