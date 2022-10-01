@@ -72,13 +72,13 @@ public class HomePage extends TestBase {
 		try{
 			if(flights_tab_icon.isDisplayed()){
 				flights_tab_icon.click();
-				LOGGER.log(Level.INFO, "Flights Tab displayed and clicked.");
+				LOGGER.log(Level.INFO, "Flights tab is displayed and clicked.");
 				Assert.assertTrue(true);
 			}
 		}
 		catch (Exception e){
 			e.printStackTrace();
-			LOGGER.log(Level.SEVERE, "Flights Tab did not displayed!");
+			LOGGER.log(Level.SEVERE, "Flights tab is not displayed");
 			Assert.assertFalse(true);
 		}
 	}
@@ -87,13 +87,13 @@ public class HomePage extends TestBase {
 		try{
 			if(roundtrip_tab_text.isDisplayed()){
 				roundtrip_tab_text.click();
-				LOGGER.log(Level.INFO, "Round Trip tab displayed and clicked.");
+				LOGGER.log(Level.INFO, "Round Trip tab is displayed and clicked.");
 				Assert.assertTrue(true);
 			}
 		}
 		catch (Exception e){
 			e.printStackTrace();
-			LOGGER.log(Level.SEVERE, "Round Trip tab did not displayed!");
+			LOGGER.log(Level.SEVERE, "Round Trip tab is not displayed!");
 			Assert.assertFalse(true);
 		}
 	}
@@ -103,6 +103,7 @@ public class HomePage extends TestBase {
 		try{
 			if (leavingfrom_btn.isDisplayed()){
 				leavingfrom_btn.click();
+				LOGGER.log(Level.INFO, "leaving form input box is displayed and clicked.");
 				input_origin_name.sendKeys(leavingfrom);
 				choose_origin_name.click();
 				LOGGER.log(Level.INFO, "Entered Leaving From Name as: " + leavingfrom);
@@ -111,7 +112,7 @@ public class HomePage extends TestBase {
 		}
 		catch (Exception e){
 			e.printStackTrace();
-			LOGGER.log(Level.SEVERE, "Leaving from input field did not displayed!");
+			LOGGER.log(Level.SEVERE, "Leaving from input field is not displayed!");
 			Assert.assertFalse(true);
 		}
 	}
@@ -120,6 +121,7 @@ public class HomePage extends TestBase {
 		try{
 			if (goingto_btn.isDisplayed()){
 				goingto_btn.click();
+				LOGGER.log(Level.INFO, "Going to input box is displayed and clicked.");
 				input_destination_name.sendKeys(goingto);
 				choose_destination_name.click();
 				LOGGER.log(Level.INFO, "Entered Going To Name as: " + goingto);
@@ -128,7 +130,7 @@ public class HomePage extends TestBase {
 		}
 		catch (Exception e){
 			e.printStackTrace();
-			LOGGER.log(Level.SEVERE, "Going To input field did not displayed!");
+			LOGGER.log(Level.SEVERE, "Going To input field is not displayed!");
 			Assert.assertFalse(true);
 		}
 	}
@@ -146,7 +148,7 @@ public class HomePage extends TestBase {
 		}
 		catch (Exception e){
 			e.printStackTrace();
-			LOGGER.log(Level.SEVERE, "Departure Date calendar did not displayed!");
+			LOGGER.log(Level.SEVERE, "Departure Date calendar is not displayed!");
 			Assert.assertFalse(true);
 		}
 	}
@@ -166,7 +168,7 @@ public class HomePage extends TestBase {
 		}
 		catch (Exception e){
 			e.printStackTrace();
-			LOGGER.log(Level.SEVERE, "Return Date calendar did not displayed!");
+			LOGGER.log(Level.SEVERE, "Return Date calendar is not displayed!");
 			Assert.assertFalse(true);
 		}
 	}
@@ -181,7 +183,7 @@ public class HomePage extends TestBase {
 		}
 		catch (Exception e){
 			e.printStackTrace();
-			LOGGER.log(Level.SEVERE, "Date Picker Done button did not displayed!");
+			LOGGER.log(Level.SEVERE, "Date Picker Done button is not displayed!");
 			Assert.assertFalse(true);
 		}
 	}
@@ -196,7 +198,7 @@ public class HomePage extends TestBase {
 		}
 		catch (Exception e){
 			e.printStackTrace();
-			LOGGER.log(Level.SEVERE, "Search button did not displayed!");
+			LOGGER.log(Level.SEVERE, "Search button is not displayed!");
 			Assert.assertFalse(false);
 		}
 	}

@@ -122,7 +122,7 @@ public class SearchResultPage extends TestBase {
             if(departure_location.isDisplayed()){
                 String get_deptlocation = departure_location.getAttribute("value");
                 if (get_deptlocation.contains(leavingfrom)){
-                    LOGGER.log(Level.INFO, "Leaving From location got matched as: " + get_deptlocation);
+                    LOGGER.log(Level.INFO, "Leaving From location is same as: " + get_deptlocation);
                     Assert.assertTrue(true);
                 }
                 else {
@@ -131,13 +131,13 @@ public class SearchResultPage extends TestBase {
                 }
             }
             else {
-                LOGGER.log(Level.SEVERE, "Departure Location field did not displayed!");
+                LOGGER.log(Level.SEVERE, "Departure Location field is not displayed!");
                 Assert.assertFalse(true);
             }
             if (arrival_location.isDisplayed()){
                 String get_arrivallocation = arrival_location.getAttribute("value");
                 if(get_arrivallocation.contains(goingto)){
-                    LOGGER.log(Level.INFO, "Going To location got matched as: " + get_arrivallocation);
+                    LOGGER.log(Level.INFO, "Going To location is same as: " + get_arrivallocation);
                     Assert.assertTrue(true);
                 }
                 else {
@@ -152,7 +152,7 @@ public class SearchResultPage extends TestBase {
             if (departure_date.isDisplayed()){
                 String get_deptdate = departure_date.getAttribute("value");
                 if (get_deptdate.contains(deptdate)){
-                    LOGGER.log(Level.INFO, "Departure Date got matched as: " + get_deptdate);
+                    LOGGER.log(Level.INFO, "Departure Date is same as: " + get_deptdate);
                     Assert.assertTrue(true);
                 }
                 else {
@@ -167,7 +167,7 @@ public class SearchResultPage extends TestBase {
             if (return_date.isDisplayed()){
                 String get_returndate = return_date.getAttribute("value");
                 if (get_returndate.contains(returndate)){
-                    LOGGER.log(Level.INFO, "Return Date got matched as: " + get_returndate);
+                    LOGGER.log(Level.INFO, "Return Date is same as: " + get_returndate);
                     Assert.assertTrue(true);
                 }
                 else{
@@ -289,7 +289,7 @@ public class SearchResultPage extends TestBase {
             }
             if (first_flight_from.isDisplayed()){
                 if (departing_from.replace(" -","").contains(first_flight_from.getText())){
-                    LOGGER.log(Level.INFO, "Departure Flight from got matched.");
+                    LOGGER.log(Level.INFO, "Departure Flight from is same.");
                     Assert.assertTrue(true);
                 }
                 else {
