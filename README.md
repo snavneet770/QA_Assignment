@@ -1,6 +1,4 @@
-### Assignment Project
-
-# Project setup in local machine
+## Project setup in local machine
 
 1. Clone project from `git url`
 2. Open project in a Code Editor as a `Maven` Project
@@ -16,6 +14,7 @@
         - `DepartureDate` -> Update value for defining Departure Date (Follow M/DD/YYYY Date format)
         - `ReturnDate` -> Update value for defining Return Date (Follow M/DD/YYYY Date format)
 
-# Steps to run Automation Suite
+## Steps to run Automation Suite
+
 1. Follow above mentioned points in `Project setup in local machine` section
 2. Navigate to src>main>resources, Run `testng.xml`
