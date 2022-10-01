@@ -1,4 +1,4 @@
-# Project setup in local machine
+# Steps to setup project in local
 
 1. Clone project from `git url`
 2. Open project in a Code Editor as a `Maven` Project
